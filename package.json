@@ -1,0 +1,17 @@
+{
+  "name": "mpwa-node-server",
+  "version": "1.0.0",
+  "main": "whatsapp.js",
+  "scripts": {
+    "start": "node whatsapp.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0",
+    "socket.io": "^4.7.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "pino": "^8.15.0"
+  }
+}
