@@ -14,9 +14,14 @@ const app = express();
 app.use(express.json({ limit: "5mb" }));
 app.use(cors());
 
-// Node server check
+// Root check
 app.get("/", (req, res) => {
   res.send("MPWA Node Server Running 🎉");
+});
+
+// MPWA Diagnostic Polling Endpoint (MOST IMPORTANT)
+app.get("/poll", (req, res) => {
+  res.json({ status: "running", message: "Node OK" });
 });
 
 const startSock = async () => {
@@ -64,3 +69,4 @@ const PORT = process.env.PORT || 3100;
 app.listen(PORT, () => {
   console.log("Node server running on port", PORT);
 });
+
