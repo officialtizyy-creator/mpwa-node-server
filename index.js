@@ -1,5 +1,5 @@
 "use strict";
-const cache = require("./../lib/cache");
+const cache = require("../../lib/cache");
 const express = require("express");
 const router = express.Router();
 
@@ -15,7 +15,7 @@ const { clearChatSession } = require("../controllers/incomingMessage");
 const {
   checkDestination,
   checkConnectionBeforeBlast,
-} = require("../lib/middleware");
+} = require("../../lib/middleware");
 //const validation = process.env.AUTH;
 
 // sendFile will from here. Delete or comment if no use anymore
